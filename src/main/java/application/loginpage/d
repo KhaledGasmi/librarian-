@@ -1,0 +1,115 @@
+member1Button.focusedProperty().addListener((observable,oldValue,newValue) ->{
+            if (newValue){
+                focus=true;
+            }
+            else {focus=false;}
+            if (focus==true){
+            extendButton.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent actionEvent) {
+                    confirmextDialog.setVisible(true);
+                    memberName.setText("Zeghdar Seif El Islam");
+                    bookName1.setText(bookName.getText());
+                    translateTransition1.play();
+                    extendButton.setDisable(true);
+                    third.setOnMouseClicked(event ->{
+                        extendButton.setOnAction(null);
+                        confirmextDialog.setVisible(false);
+                        translateTransition11.play();
+                        extendButton.setDisable(false);
+
+                    });
+            }});
+
+            returnButton.setOnAction(new EventHandler<ActionEvent>() {
+                @Override
+                public void handle(ActionEvent actionEvent) {
+                    confirmreturnDialog.setVisible(true);
+                    memberName11.setText("Zeghdar Seif El Islam");
+                    bookName21.setText(bookName.getText());
+                    translateTransition3.play();
+                    returnButton.setDisable(true);
+                    third.setOnMouseClicked(event ->{
+                        returnButton.setOnAction(null);
+                        confirmreturnDialog.setVisible(false);
+                        translateTransition33.play();
+                        returnButton.setDisable(false);
+
+                    });
+                }});
+
+
+
+            }
+    });
+        cancel.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                extendButton.setDisable(false);
+
+                translateTransition11.play();
+            }
+        });
+
+        cancel1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                returnButton.setDisable(false);
+
+                translateTransition33.play();
+            }
+        });
+
+        confirm.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                extendButton.setOnAction(null);
+                extdoneDialog.setVisible(true);
+                confirmextDialog.setVisible(false);
+                bookName2.setText(bookName.getText());
+                memberName1.setText("zeghdar Seif El Islam");
+                translateTransition11.play();
+
+
+            }
+        });
+
+        confirm1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                returnButton.setOnAction(null);
+                returndoneDialog.setVisible(true);
+                confirmreturnDialog.setVisible(false);
+                bookName11.setText(bookName.getText());
+                memberName2.setText("zeghdar Seif El Islam");
+                translateTransition33.play();
+
+
+            }
+        });
+
+        back.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                extendButton.setDisable(false);
+                translateTransition2.play();
+                translateTransition2.setOnFinished(event1 -> {
+                    extdoneDialog.setVisible(false);
+                    translateTransition22.play();
+                });
+
+            }
+        });
+
+        back1.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                returnButton.setDisable(false);
+                translateTransition4.play();
+                translateTransition4.setOnFinished(event1 -> {
+                    returndoneDialog.setVisible(false);
+                    translateTransition44.play();
+                });
+
+            }
+        });

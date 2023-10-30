@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="second" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.loginpage.secondController">
+   <children>
+      <ImageView fx:id="logoImage" fitHeight="138.0" fitWidth="142.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="contact" layoutX="805.0" layoutY="458.0" prefHeight="20.0" prefWidth="480.0" text="Contact">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="bookName" layoutX="809.0" layoutY="181.0" prefHeight="29.0" prefWidth="480.0" text="Book Name">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Label fx:id="memberName" layoutX="805.0" layoutY="410.0" prefHeight="29.0" prefWidth="480.0" text="Member Name">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Label fx:id="author" layoutX="805.0" layoutY="238.0" prefHeight="20.0" prefWidth="480.0" text="Author">
+         <font>
+            <Font size="16.0" />
+         </font></Label>
+      <Label fx:id="available" layoutX="809.0" layoutY="285.0" prefHeight="21.0" prefWidth="480.0" text="Availability">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <TextField fx:id="bookField" layoutX="182.0" layoutY="248.0" prefHeight="37.0" prefWidth="228.0" />
+      <TextField fx:id="memberField" layoutX="181.0" layoutY="451.0" prefHeight="37.0" prefWidth="228.0" />
+      <Label fx:id="bookLabel" layoutX="182.0" layoutY="259.0" text="Book ID / Name" />
+      <Label fx:id="memberLabel" layoutX="181.0" layoutY="460.0" prefHeight="16.0" prefWidth="102.0" text="Member ID" />
+      <Button fx:id="borrowButton" layoutX="598.0" layoutY="591.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="170.0" text="Borrow" />
+      <ImageView fx:id="bookImage" fitHeight="60.0" fitWidth="60.0" layoutX="351.0" layoutY="195.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="memberImage" fitHeight="60.0" fitWidth="60.0" layoutX="351.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="setting" fitHeight="25.0" fitWidth="25.0" layoutX="1150.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="account" fitHeight="25.0" fitWidth="25.0" layoutX="1210.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="borrowBar" layoutX="182.0" layoutY="6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="126.0" text="Button" />
+      <Button fx:id="returnBar" layoutX="307.0" layoutY="6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="187.0" text="Button" />
+      <Button fx:id="detailsBar" layoutX="494.0" layoutY="6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="126.0" text="Button" />
+      <Button fx:id="statisticsBar" layoutX="620.0" layoutY="6.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="126.0" text="Button" />
+      <Label fx:id="book_x" layoutX="402.0" layoutY="257.0" prefHeight="20.0" prefWidth="0.0" />
+      <DialogPane fx:id="settDialog" layoutX="1092.0" layoutY="54.0" prefHeight="82.0" prefWidth="142.0" />
+      <Label fx:id="extensionLabel" layoutX="1104.0" layoutY="67.0" prefHeight="16.0" prefWidth="118.0" text="Extension period" />
+      <Label fx:id="periodSett" layoutX="1104.0" layoutY="106.0" text="07" />
+      <Label fx:id="daysLabel" layoutX="1160.0" layoutY="106.0" text="days" />
+      <DialogPane fx:id="userDialog" layoutX="1173.0" layoutY="53.0" prefHeight="214.0" prefWidth="100.0" />
+      <Label fx:id="userlabDialog" layoutX="1189.0" layoutY="67.0" text="Username" />
+      <Label fx:id="passlabDialog" layoutX="1191.0" layoutY="129.0" text="Password" />
+      <Label fx:id="newpasslabDialog" layoutX="1176.0" layoutY="195.0" text="New password" />
+      <TextField fx:id="usernameDialog" layoutX="1181.0" layoutY="92.0" prefHeight="5.0" prefWidth="83.0" />
+      <PasswordField fx:id="passDialog" layoutX="1182.0" layoutY="154.0" prefHeight="6.0" prefWidth="83.0" />
+      <PasswordField fx:id="newpassDialog" layoutX="1182.0" layoutY="226.0" prefHeight="6.0" prefWidth="83.0" />
+      <AnchorPane fx:id="confirmDialog1" layoutX="411.0" layoutY="239.0" prefHeight="184.0" prefWidth="629.0">
+         <children>
+            <Button fx:id="back" layoutX="478.0" layoutY="112.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="118.0" text="Back" />
+            <Label fx:id="memberName11" layoutX="128.0" layoutY="94.0" prefHeight="16.0" prefWidth="102.0" text="Member Name" />
+            <Label fx:id="success" layoutX="391.0" layoutY="64.0" text="is done successfully" />
+            <Label fx:id="borrowofthe" layoutX="24.0" layoutY="64.0" prefHeight="16.0" prefWidth="255.0" text="The borrow of the book" />
+            <Label fx:id="borrowdone" layoutX="24.0" layoutY="23.0" prefHeight="25.0" prefWidth="135.0" text="Borrow done">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="tothe" layoutX="24.0" layoutY="94.0" text="to the member" />
+            <Label fx:id="bookName11" layoutX="185.0" layoutY="64.0" prefHeight="16.0" prefWidth="203.0" text="Book Name" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="member_x" layoutX="402.0" layoutY="460.0" prefHeight="20.0" prefWidth="0.0" />
+      <AnchorPane fx:id="confirmDialog" layoutX="411.0" layoutY="-191.0" prefHeight="184.0" prefWidth="629.0">
+         <children>
+            <Button fx:id="confirm" layoutX="342.0" layoutY="122.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="118.0" text="Confirm" />
+            <Label fx:id="wantto" layoutX="24.0" layoutY="64.0" prefHeight="16.0" prefWidth="213.0" text="Do you want to borrow the book" />
+            <Label fx:id="bookName1" layoutX="248.0" layoutY="64.0" prefHeight="16.0" prefWidth="203.0" text="Book Name" />
+            <Label fx:id="confirmLab" layoutX="24.0" layoutY="23.0" prefHeight="25.0" prefWidth="135.0" text="Confirm Borrow">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="tomember" layoutX="452.0" layoutY="64.0" text="to the member" />
+            <Label fx:id="memberName1" layoutX="24.0" layoutY="94.0" prefHeight="16.0" prefWidth="102.0" text="Member Name" />
+            <Button fx:id="cancel" layoutX="478.0" layoutY="122.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="118.0" text="Cancel" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

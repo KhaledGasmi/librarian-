@@ -1,0 +1,136 @@
+*{
+    -fx-font-family:"Arial";
+    -fx-text-fill:black
+}
+#leftAnchor{
+-fx-background-color:#002147;
+}
+#rightAnchor {
+-fx-background-image:url("Background.png");
+}
+.text-field {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent black transparent;
+    -fx-border-width: 0 0 1px 0;
+    -fx-prompt-text-fill: Black;
+}
+
+
+#loginButton, #borrowButton, #cancel, #confirm,#back,#extendButton,#returnButton,#confirm1,#back1,#cancel1,#saveButton,#cancelButton,#saveButton1,#cancelButton1{
+-fx-background-color: #002147;
+-fx-font-family: 'Poppins';
+-fx-text-fill: f5f5dc;
+-fx-border-width: 1px 1px 1px 1px ;
+-fx-border-style: solid;
+-fx-border-color:#002147;
+-fx-background-radius: 20px;
+-fx-border-radius: 20px;
+-fx-effect: dropshadow( gaussian, rgba(0, 33, 71, 0.5), 20, 0, 0, 0);
+
+}
+
+
+#loginButton:hover, #borrowButton:hover, #cancel:hover, #confirm:hover,#back:focused,#extendButton:hover,#returnButton:hover,#extendButton:disabled,#returnButton:disabled,#confirm1:hover,#cancel1:hover,#back1:hover,#confirm1:focused,#cancel1:focused,#back1:focused,#saveButton:focused,#cancelButton:focused,#saveButton1:focused,#cancelButton1:focused {
+  -fx-border-color: #f5f5dc;
+  -fx-text-fill: white;
+  -fx-effect: dropshadow( gaussian, rgba(0, 0, 0, 0.5), 20, 0, 0, 0);
+
+
+}
+
+#librarian{
+-fx-text-fill: #002147;
+-fx-font-family: 'Arial';
+-fx-text-align:center;
+}
+#ensta{
+-fx-text-fill: white;
+-fx-font-family: 'serif';
+-fx-text-align:center;
+}
+#second,#third,#fourth,#fifth{
+    -fx-background-image:url("Background2.png");
+}
+#statisticsBar, #returnBar, #borrowBar,#detailsBar{
+    -fx-background-color:transparent;
+    -fx-font-family: "Arial";
+    -fx-text-fill:black;
+    -fx-border-color: transparent transparent transparent transparent;
+}
+#statisticsBar:focused, #returnBar:focused, #borrowBar:focused,#detailsBar:focused{
+    -fx-text-fill: #002147;
+    -fx-font-size:15px;
+    -fx-font-family: "Arial";
+    -fx-border-color: transparent transparent #002147 transparent;
+    -fx-border-width: 0 0 2px 0;
+
+}
+.dialog-pane{
+    -fx-background-color:#c7d9c5;
+    -fx-border-radius: 5px;
+    -fx-background-radius:5px;
+    -fx-opacity:0.8;
+    -fx-text-fill:black;
+    -fx-font-family:"Arial";
+}
+#userDialog{
+    -fx-opacity:0.5;
+}
+#periodSett,#usernameDialog, #passDialog,#newpassDialog{
+    -fx-background-color:#e4dfd7;
+    -fx-background-radius: 5px;
+    -fx-border-radius:5px;
+    -fx-border-width:2px;
+    -fx-text-fill:black;
+    -fx-font-family:"Arial";
+    -fx-border-color: transparent transparent transparent transparent;
+}
+#contact,#bookName,#author,#available,#memberName{
+    -fx-text-alignment:center;
+}
+#confirmDialog, #confirmDialog1,#confirmextDialog,#extdoneDialog,#returndoneDialog,#confirmreturnDialog,#addBook,#addMember{
+    -fx-background-color:white;
+    -fx-border-radius:5px;
+    -fx-background-radius:5px;
+}
+#left,#right,#center,#bookdetailsAnchor,#memberdetailsAnchor{
+    -fx-background-color:#E0CDA9;
+    -fx-border-radius:10px;
+    -fx-background-radius:10px;
+
+}
+#member1Button,#member2Button{
+    -fx-text-align:center;
+    -fx-background-color:transparent;
+    -fx-border-color:transparent transparent transparent transparent;
+}
+#member1Button:hover,#member2Button:hover,#member1Button:focused,#member2Button:focused{
+    -fx-text-align:center;
+    -fx-background-color:transparent;
+    -fx-border-color:#002147 #002147 #002147 #002147;
+    -fx-border-radius:10px;
+    -fx-background-radius:10px;
+
+}
+.table-view {
+    -fx-background-color: white;
+    -fx-font-family:"Arial";
+    -fx-text-fill:black;
+    -fx-border-radius:10px;
+    -fx-border-color:transparent;
+    -fx-background-radius:10px;
+    -fx-effect: dropshadow( gaussian, rgba(0, 0, 0, 0.5), 20, 0, 0, 0);
+}
+.table-view .table-cell {
+    -fx-border-color: black;
+    -fx-border-width:1px;
+    -fx-background-color:white;
+    -fx-padding: 17px, 2px, 2px, 17px;
+}
+.table-view .column-header{
+    -fx-border-color: black;
+    -fx-border-width:1px;
+    -fx-background-color:white;
+    -fx-padding: 30px, 2px, 2px, 30px;
+
+}
